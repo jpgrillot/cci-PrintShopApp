@@ -1,0 +1,27 @@
+minimum_cumulusci_version: '3.70.0'
+project:
+    name: PrintShopApp
+    package:
+        name: psa
+        api_version: '55.0'
+    git:
+        default_branch: 'main'
+    test:
+        name_match: '%Test%'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/PrintShopApp/tests
+            options:
+                outputdir: robot/PrintShopApp/results
+
+    robot_testdoc:
+        options:
+            path: robot/PrintShopApp/tests
+            output: robot/PrintShopApp/doc/PrintShopApp_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
