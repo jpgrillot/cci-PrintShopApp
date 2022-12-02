@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Printer__c</fullName>
+    <description>Master lookup to the Printer</description>
+    <externalId>false</externalId>
+    <label>Printer</label>
+    <referenceTo>psa_Printer__c</referenceTo>
+    <relationshipLabel>Upgrades</relationshipLabel>
+    <relationshipName>Upgrades</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

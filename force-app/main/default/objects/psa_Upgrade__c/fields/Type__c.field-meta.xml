@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <description>Upgrade type</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>efficiency</fullName>
+                <default>false</default>
+                <label>efficiency</label>
+            </value>
+            <value>
+                <fullName>quality</fullName>
+                <default>false</default>
+                <label>quality</label>
+            </value>
+            <value>
+                <fullName>performance</fullName>
+                <default>false</default>
+                <label>performance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
