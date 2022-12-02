@@ -1,6 +1,11 @@
 # PrintShopApp
 Print Shop App built on the Force.com platform using Cumulus CI
 
+## Branching
+  * feature/ - feature branch
+  * beta/ - beta branch
+  * release/ Release branch
+
 ## Development
 
 To work on this project in a scratch org:
