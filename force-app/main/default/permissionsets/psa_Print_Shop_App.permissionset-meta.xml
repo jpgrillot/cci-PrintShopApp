@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>Print_Shop</application>
+        <visible>true</visible>
+    </applicationVisibilities>
     <description>Permission Set for the Print Shop App</description>
     <fieldPermissions>
         <editable>true</editable>
@@ -14,6 +18,21 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>psa_Printer__c.Manufacturer__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>psa_Printer__c.Max_X__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>psa_Printer__c.Max_Y__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>psa_Printer__c.Max_Z__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
