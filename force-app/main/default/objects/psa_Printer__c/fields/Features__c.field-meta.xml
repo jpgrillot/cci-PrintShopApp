@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Features__c</fullName>
+    <description>Features of the printer</description>
+    <externalId>false</externalId>
+    <label>Features</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Direct-Drive</fullName>
+                <default>false</default>
+                <label>Direct-Drive</label>
+            </value>
+            <value>
+                <fullName>Bowden-Drive</fullName>
+                <default>false</default>
+                <label>Bowden-Drive</label>
+            </value>
+            <value>
+                <fullName>Enclosed</fullName>
+                <default>false</default>
+                <label>Enclosed</label>
+            </value>
+            <value>
+                <fullName>Open Air</fullName>
+                <default>false</default>
+                <label>Open Air</label>
+            </value>
+            <value>
+                <fullName>Air Filtration</fullName>
+                <default>false</default>
+                <label>Air Filtration</label>
+            </value>
+            <value>
+                <fullName>Illuminated</fullName>
+                <default>false</default>
+                <label>Illuminated</label>
+            </value>
+            <value>
+                <fullName>Filament Spool Heater</fullName>
+                <default>false</default>
+                <label>Filament Spool Heater</label>
+            </value>
+            <value>
+                <fullName>Auto Bed-leveling</fullName>
+                <default>false</default>
+                <label>Auto Bed-leveling</label>
+            </value>
+            <value>
+                <fullName>Manual Bed-leveling</fullName>
+                <default>false</default>
+                <label>Manual Bed-leveling</label>
+            </value>
+            <value>
+                <fullName>2K</fullName>
+                <default>false</default>
+                <label>2K</label>
+            </value>
+            <value>
+                <fullName>4K</fullName>
+                <default>false</default>
+                <label>4K</label>
+            </value>
+            <value>
+                <fullName>DLP</fullName>
+                <default>false</default>
+                <label>DLP</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>FDM - Cartesian</controllingFieldValue>
+            <controllingFieldValue>FDM - Delta</controllingFieldValue>
+            <valueName>Direct-Drive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FDM - Cartesian</controllingFieldValue>
+            <controllingFieldValue>FDM - Delta</controllingFieldValue>
+            <valueName>Bowden-Drive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FDM - Cartesian</controllingFieldValue>
+            <controllingFieldValue>FDM - Delta</controllingFieldValue>
+            <controllingFieldValue>SLA</controllingFieldValue>
+            <valueName>Enclosed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FDM - Cartesian</controllingFieldValue>
+            <controllingFieldValue>FDM - Delta</controllingFieldValue>
+            <valueName>Open Air</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FDM - Cartesian</controllingFieldValue>
+            <controllingFieldValue>FDM - Delta</controllingFieldValue>
+            <controllingFieldValue>SLA</controllingFieldValue>
+            <valueName>Air Filtration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FDM - Cartesian</controllingFieldValue>
+            <controllingFieldValue>FDM - Delta</controllingFieldValue>
+            <valueName>Illuminated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FDM - Cartesian</controllingFieldValue>
+            <controllingFieldValue>FDM - Delta</controllingFieldValue>
+            <valueName>Filament Spool Heater</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FDM - Cartesian</controllingFieldValue>
+            <controllingFieldValue>FDM - Delta</controllingFieldValue>
+            <controllingFieldValue>SLA</controllingFieldValue>
+            <valueName>Auto Bed-leveling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FDM - Cartesian</controllingFieldValue>
+            <controllingFieldValue>FDM - Delta</controllingFieldValue>
+            <controllingFieldValue>SLA</controllingFieldValue>
+            <valueName>Manual Bed-leveling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SLA</controllingFieldValue>
+            <valueName>2K</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SLA</controllingFieldValue>
+            <valueName>4K</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SLA</controllingFieldValue>
+            <valueName>DLP</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

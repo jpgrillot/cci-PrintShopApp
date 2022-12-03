@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PLA</fullName>
+        <default>false</default>
+        <label>PLA</label>
+    </customValue>
+    <customValue>
+        <fullName>PETG</fullName>
+        <default>false</default>
+        <label>PETG</label>
+    </customValue>
+    <customValue>
+        <fullName>FLEX</fullName>
+        <default>false</default>
+        <label>FLEX</label>
+    </customValue>
+    <customValue>
+        <fullName>PC-CF</fullName>
+        <default>false</default>
+        <label>PC-CF</label>
+    </customValue>
+    <customValue>
+        <fullName>PC Blend</fullName>
+        <default>false</default>
+        <label>PC Blend</label>
+    </customValue>
+    <customValue>
+        <fullName>ABS</fullName>
+        <default>false</default>
+        <label>ABS</label>
+    </customValue>
+    <description>Material Type</description>
+    <masterLabel>Material</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

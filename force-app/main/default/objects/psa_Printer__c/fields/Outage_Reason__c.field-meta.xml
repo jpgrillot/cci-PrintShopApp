@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outage_Reason__c</fullName>
+    <description>Reason Why Printer is Offline</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the reason why the printer is offline</inlineHelpText>
+    <label>Outage Reason</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

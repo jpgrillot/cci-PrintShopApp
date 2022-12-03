@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Connectivity__c</fullName>
+    <description>Connectivity of the printer</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How are prints initiated.</inlineHelpText>
+    <label>Connectivity</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Octoprint</fullName>
+                <default>false</default>
+                <label>Octoprint</label>
+            </value>
+            <value>
+                <fullName>Klipper</fullName>
+                <default>false</default>
+                <label>Klipper</label>
+            </value>
+            <value>
+                <fullName>SD-Card</fullName>
+                <default>false</default>
+                <label>SD-Card</label>
+            </value>
+            <value>
+                <fullName>USB</fullName>
+                <default>false</default>
+                <label>USB</label>
+            </value>
+            <value>
+                <fullName>Proprietary</fullName>
+                <default>false</default>
+                <label>Proprietary</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

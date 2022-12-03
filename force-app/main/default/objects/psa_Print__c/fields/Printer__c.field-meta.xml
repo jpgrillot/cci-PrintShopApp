@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Printer__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup to Printer</description>
+    <externalId>false</externalId>
+    <label>Printer</label>
+    <referenceTo>psa_Printer__c</referenceTo>
+    <relationshipLabel>Prints</relationshipLabel>
+    <relationshipName>Prints</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

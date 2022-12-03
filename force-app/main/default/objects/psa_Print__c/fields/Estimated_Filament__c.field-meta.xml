@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estimated_Filament__c</fullName>
+    <description>Estimated amount of filament to be used</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Estimated amount of filament used.</inlineHelpText>
+    <label>Estimated Filament (g)</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>
