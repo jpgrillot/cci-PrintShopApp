@@ -18,6 +18,24 @@
         <type>Flexipage</type>
         <pageOrSobjectType>psa_Printer__c</pageOrSobjectType>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Project_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>psa_Project__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Project_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>psa_Project__c</pageOrSobjectType>
+    </actionOverrides>
     <brand>
         <headerColor>#0070D2</headerColor>
         <logo>clipart945894</logo>
@@ -32,7 +50,9 @@
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>Print Shop</label>
     <navType>Standard</navType>
+    <tabs>psa_Project__c</tabs>
     <tabs>psa_Printer__c</tabs>
+    <tabs>psa_Filament__c</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-File</tabs>
     <tabs>standard-report</tabs>
