@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <applicationVisibilities>
-        <application>Print_Shop</application>
+        <application>psa_Print_Shop</application>
         <visible>true</visible>
     </applicationVisibilities>
     <description>Permission Set for the Print Shop App</description>
