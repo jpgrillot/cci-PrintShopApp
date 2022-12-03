@@ -61,7 +61,7 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Print_Shop</name>
+        <name>psa_Print_Shop</name>
         <type>CustomApplication</type>
     </appMenuItems>
 </AppMenu>
