@@ -12,12 +12,42 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>psa_Filament__c.Bed_Temp_Range__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>psa_Filament__c.Bed_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>psa_Filament__c.Color__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>psa_Filament__c.Manufacturer__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>psa_Filament__c.Notes__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>psa_Filament__c.Nozzle_Temp_Range__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>psa_Filament__c.Print_Speed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>psa_Filament__c.Series__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -33,6 +63,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>psa_Print__c.Actual_Minutes__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>psa_Print__c.Brim__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -67,12 +102,27 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>psa_Print__c.Infill__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>psa_Print__c.Model_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>psa_Print__c.Printer__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>psa_Print__c.Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>psa_Print__c.Supports__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
