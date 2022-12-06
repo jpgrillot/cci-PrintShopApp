@@ -75,6 +75,10 @@
                 <behavior>Edit</behavior>
                 <field>Estimated_Minutes__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Estimated_Print_Time__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
