@@ -166,7 +166,7 @@
         <description>Formula to create the Filament Name</description>
         <name>fFilamentName</name>
         <dataType>String</dataType>
-        <expression>IF(NOT(ISNULL({!txtSeries})), {!txtColor} &amp; &apos; &apos; &amp; {!txtSeries} &amp; &apos; &apos; &amp; {!mspMaterialType}, {!txtColor} &amp; &apos; &apos; &amp; {!plManufacturer} &amp; &apos; &apos; &amp; {!mspMaterialType})</expression>
+        <expression>IF(NOT(ISBLANK({!txtSeries})), {!txtColor} &amp; &apos; &apos; &amp; {!txtSeries} &amp; &apos; &apos; &amp; {!mspMaterialType}, {!txtColor} &amp; &apos; &apos; &amp; {!plManufacturer} &amp; &apos; &apos; &amp; {!mspMaterialType})</expression>
     </formulas>
     <interviewLabel>Filament Quick Add {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Filament Quick Add</label>
