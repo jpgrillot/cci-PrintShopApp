@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <description>Calculate the new weight</description>
+        <name>asg_NewWeight</name>
+        <label>asg_NewWeight</label>
+        <locationX>176</locationX>
+        <locationY>518</locationY>
+        <assignmentItems>
+            <assignToReference>getFilamentRecord.Available_Qty__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fNewWeight</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>updateFilamentWeight</targetReference>
+        </connector>
+    </assignments>
+    <description>Flow that recalculates the available quantity of filament.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Formula calculates the new weight</description>
+        <name>fNewWeight</name>
+        <dataType>Number</dataType>
+        <expression>{!Total_Weight} - {!getFilamentRecord.Spool_Weight_g__c}</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Filament Weight Auditor {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Filament Weight Auditor</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <description>Get the filament record to update</description>
+        <name>getFilamentRecord</name>
+        <label>getFilamentRecord</label>
+        <locationX>176</locationX>
+        <locationY>278</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>scr_Update_Screen</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>vFilamentRecordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>psa_Filament__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update the Filament record</description>
+        <name>updateFilamentWeight</name>
+        <label>updateFilamentWeight</label>
+        <locationX>176</locationX>
+        <locationY>638</locationY>
+        <connector>
+            <targetReference>scrRecalc</targetReference>
+        </connector>
+        <inputReference>getFilamentRecord</inputReference>
+    </recordUpdates>
+    <screens>
+        <description>Filament Update Wizard</description>
+        <name>scr_FUW_Welcome</name>
+        <label>FUW Welcome</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>getFilamentRecord</targetReference>
+        </connector>
+        <fields>
+            <name>dt_Welcome</name>
+            <fieldText>&lt;p&gt;Welcome to the filament update wizard. Run this flow to calculate the available inventory.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>scr_Update_Screen</name>
+        <label>Update Screen</label>
+        <locationX>176</locationX>
+        <locationY>398</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>asg_NewWeight</targetReference>
+        </connector>
+        <fields>
+            <name>dt_WeightInstructions</name>
+            <fieldText>&lt;p&gt;Enter in the total weight of the spool and filament&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Total_Weight</name>
+            <dataType>Number</dataType>
+            <fieldText>Total Weight (g)</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <scale>0</scale>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>scrRecalc</name>
+        <label>scrRecalc</label>
+        <locationX>176</locationX>
+        <locationY>758</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>dt_Complete</name>
+            <fieldText>&lt;p&gt;The available quantity has been recalculated.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>scr_FUW_Welcome</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>record Id of the Filament</description>
+        <name>vFilamentRecordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>
