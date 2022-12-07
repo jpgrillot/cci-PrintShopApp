@@ -270,6 +270,12 @@
                 <elementReference>numSpoolSize</elementReference>
             </value>
         </inputAssignments>
+        <inputAssignments>
+            <field>Spool_Weight_g__c</field>
+            <value>
+                <elementReference>vFilament.Spool_Weight_g__c</elementReference>
+            </value>
+        </inputAssignments>
         <object>psa_Filament__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
@@ -354,6 +360,12 @@
                 <elementReference>numSpoolSize</elementReference>
             </value>
         </inputAssignments>
+        <inputAssignments>
+            <field>Spool_Weight_g__c</field>
+            <value>
+                <elementReference>numSpool_Weight</elementReference>
+            </value>
+        </inputAssignments>
         <object>psa_Filament__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
@@ -414,6 +426,14 @@
             <name>dtEnterSettings</name>
             <fieldText>&lt;p&gt;Enter in the recommended settings for the filament&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>numSpool_Weight</name>
+            <dataType>Number</dataType>
+            <fieldText>Spool Weight</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+            <scale>0</scale>
         </fields>
         <fields>
             <name>txtNozzleTempRange</name>

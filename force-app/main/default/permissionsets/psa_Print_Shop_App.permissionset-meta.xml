@@ -57,6 +57,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>psa_Filament__c.Spool_Weight_g__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>psa_Material__c.Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
