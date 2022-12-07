@@ -31,12 +31,12 @@ public class psa_BasicTest {
         
         // Create Print Job
         test.startTest();
-        psa_Print__c testPrint = new psa_Print__c(Name='Case',Project__c=proj.Id,Printer__c=printer.Id,Filament__c=filament.Id);
-        insert testPrint;
+            psa_Print__c testPrint = new psa_Print__c(Name='Case',Project__c=proj.Id,Printer__c=printer.Id,Filament__c=filament.Id);
+            insert testPrint;
         test.stopTest();
         
         psa_Print__c validPrint = [SELECT Id, Name FROM psa_Print__c LIMIT 1];
-        System.assertEquals('Case',validPrint.Name);
+        System.assertEquals('Case',validPrint.Name,'Print was not created');
         
         // Update Printer to offline w/o Reason (negative test)
     }

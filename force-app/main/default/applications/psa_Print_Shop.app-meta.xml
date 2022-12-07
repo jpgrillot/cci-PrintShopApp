@@ -36,6 +36,14 @@
         <type>Flexipage</type>
         <pageOrSobjectType>psa_Project__c</pageOrSobjectType>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>psa_Print_Shop_Home_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+    </actionOverrides>
     <brand>
         <headerColor>#0070D2</headerColor>
         <logo>clipart945894</logo>
@@ -50,6 +58,7 @@
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>Print Shop</label>
     <navType>Standard</navType>
+    <tabs>standard-home</tabs>
     <tabs>psa_Project__c</tabs>
     <tabs>psa_Printer__c</tabs>
     <tabs>psa_Filament__c</tabs>

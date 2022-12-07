@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Smooth</fullName>
+        <default>false</default>
+        <label>Smooth</label>
+    </customValue>
+    <customValue>
+        <fullName>Satin</fullName>
+        <default>false</default>
+        <label>Satin</label>
+    </customValue>
+    <customValue>
+        <fullName>Textured</fullName>
+        <default>false</default>
+        <label>Textured</label>
+    </customValue>
+    <description>Print bed material</description>
+    <masterLabel>Print Bed</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

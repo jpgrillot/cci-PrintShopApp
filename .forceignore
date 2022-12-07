@@ -13,3 +13,4 @@ package.xml
 
 # Org Specific 
 **/profiles/**
+**/appMenus/**
