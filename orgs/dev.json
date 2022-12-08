@@ -19,6 +19,10 @@
     },
     "languageSettings": {
       "enableTranslationWorkbench": true
+    },
+    "enhancedNotesSettings":{
+      "enableEnhancedNotes": true,
+      "enableTasksOnEnhancedNotes": true
     }
   }
 }
