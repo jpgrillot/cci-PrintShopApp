@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
-    <folderShares>
-        <accessLevel>Manage</accessLevel>
-        <sharedTo>test-2bejekk0wcqd@example.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
+    <accessType>Public</accessType>
+    <publicFolderAccess>ReadWrite</publicFolderAccess>
     <name>Print Shop Reports</name>
 </ReportFolder>
