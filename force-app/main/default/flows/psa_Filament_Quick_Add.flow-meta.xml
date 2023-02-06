@@ -135,6 +135,14 @@
             <assignToReference>vFilament.Print_Speed__c</assignToReference>
             <field>Print_Speed__c</field>
         </outputAssignments>
+        <outputAssignments>
+            <assignToReference>vFilament.Spool_Cost__c</assignToReference>
+            <field>Spool_Cost__c</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>vFilament.Spool_Weight_g__c</assignToReference>
+            <field>Spool_Weight_g__c</field>
+        </outputAssignments>
         <sortField>Name</sortField>
         <sortOrder>Asc</sortOrder>
         <valueField>Name</valueField>
@@ -268,6 +276,12 @@
             <field>Size__c</field>
             <value>
                 <elementReference>numSpoolSize</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Spool_Cost__c</field>
+            <value>
+                <elementReference>vFilament.Spool_Cost__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>

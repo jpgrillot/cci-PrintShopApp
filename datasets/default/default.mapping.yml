@@ -1,0 +1,109 @@
+Insert Account:
+  sf_object: Account
+  table: Account
+  fields:
+  - Name
+  - Industry
+Insert psa_Project__c:
+  sf_object: psa_Project__c
+  table: psa_Project__c
+  fields:
+  - Description__c
+  - Name
+  - Status__c
+Insert psa_Filament__c:
+  sf_object: psa_Filament__c
+  table: psa_Filament__c
+  fields:
+  - Available_Qty__c
+  - Bed_Temp_Range__c
+  - Bed_Type__c
+  - Color__c
+  - Material__c
+  - Name
+  - Notes__c
+  - Nozzle_Temp_Range__c
+  - Print_Speed__c
+  - Series__c
+  - Size__c
+  - Spool_Cost__c
+  - Spool_Weight_g__c
+  lookups:
+    Manufacturer__c:
+      table: Account
+      key_field: Manufacturer__c
+Insert psa_Material__c:
+  sf_object: psa_Material__c
+  table: psa_Material__c
+  fields:
+  - Description__c
+  - Name
+  - Quantity__c
+  lookups:
+    Project__c:
+      table: psa_Project__c
+      key_field: Project__c
+Insert psa_Printer__c:
+  sf_object: psa_Printer__c
+  table: psa_Printer__c
+  fields:
+  - Additional_Features__c
+  - Connectivity__c
+  - Features__c
+  - Max_X__c
+  - Max_Y__c
+  - Max_Z__c
+  - Model__c
+  - Name
+  - Network_Name__c
+  - Outage_Reason__c
+  - Serial_Number__c
+  - Status__c
+  - Type__c
+  lookups:
+    Manufacturer__c:
+      table: Account
+      key_field: Manufacturer__c
+Insert psa_Print__c:
+  sf_object: psa_Print__c
+  table: psa_Print__c
+  fields:
+  - Actual_Hours__c
+  - Actual_Minutes__c
+  - Brim__c
+  - Consumed_Filament__c
+  - Description__c
+  - Estimated_Filament__c
+  - Estimated_Hours__c
+  - Estimated_Minutes__c
+  - Infill__c
+  - Model_URL__c
+  - Name
+  - Status__c
+  - Supports__c
+  lookups:
+    Filament__c:
+      table: psa_Filament__c
+      key_field: Filament__c
+    Printer__c:
+      table: psa_Printer__c
+      key_field: Printer__c
+    Project__c:
+      table: psa_Project__c
+      key_field: Project__c
+Insert psa_Upgrade__c:
+  sf_object: psa_Upgrade__c
+  table: psa_Upgrade__c
+  fields:
+  - Cost__c
+  - Description__c
+  - Model__c
+  - Name
+  - Type__c
+  lookups:
+    Manufacturer__c:
+      table: Account
+      key_field: Manufacturer__c
+    Printer__c:
+      table: psa_Printer__c
+      key_field: Printer__c

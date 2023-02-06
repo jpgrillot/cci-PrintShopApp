@@ -1,0 +1,24 @@
+extract:
+  Account:
+    fields:
+      - Name
+      - Industry
+      - FIELDS(REQUIRED)
+  psa_Filament__c:
+    fields:
+      - FIELDS(ALL)
+  psa_Material__c:
+    fields:
+      - FIELDS(ALL)
+  psa_Printer__c:
+    fields:
+      - FIELDS(ALL)
+  psa_Project__c:
+    fields:
+      - FIELDS(ALL)
+  psa_Print__c:
+    fields:
+      - FIELDS(ALL)
+  psa_Upgrade__c:
+    fields:
+      - FIELDS(ALL)
