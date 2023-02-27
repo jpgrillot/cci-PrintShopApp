@@ -1,0 +1,19 @@
+<template>
+    <lightning-card icon-name="hazmat_equipment">
+        <template lwc:if={printer.data}>
+            <span slot="title">{name}</span>
+            <div class="slds-var-m-horizontal_medium">
+                <img
+                    if:true={image}
+                    src={image}
+                    alt="Printer Image"
+                    class="slds-var-m-bottom_x-small"
+                />
+            </div>
+
+        </template>
+        <template if:true={printer.error}>
+            <p>No Image Available</p>
+        </template>
+    </lightning-card>
+</template>

@@ -35,6 +35,10 @@
                 <behavior>Edit</behavior>
                 <field>Max_Bed_Temp__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Printer_Image_URL__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
