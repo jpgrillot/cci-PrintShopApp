@@ -57,6 +57,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>psa_Filament__c.Spool_Cost__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>psa_Filament__c.Spool_Weight_g__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -172,6 +177,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>psa_Printer__c.Max_Bed_Temp__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>psa_Printer__c.Max_Build_Volume__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>psa_Printer__c.Max_Hotend_Temp__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>psa_Printer__c.Max_X__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -198,6 +218,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>psa_Printer__c.Outage_Reason__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>psa_Printer__c.Printer_Image_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
