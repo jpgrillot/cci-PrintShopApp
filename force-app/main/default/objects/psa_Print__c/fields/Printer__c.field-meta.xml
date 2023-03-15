@@ -5,6 +5,16 @@
     <description>Lookup to Printer</description>
     <externalId>false</externalId>
     <label>Printer</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Please select an online printer</errorMessage>
+        <filterItems>
+            <field>psa_Printer__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Online</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
     <referenceTo>psa_Printer__c</referenceTo>
     <relationshipLabel>Prints</relationshipLabel>
     <relationshipName>Prints</relationshipName>

@@ -24,6 +24,11 @@
                 <default>false</default>
                 <label>Offline</label>
             </value>
+            <value>
+                <fullName>Deprecated</fullName>
+                <default>false</default>
+                <label>Deprecated</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
