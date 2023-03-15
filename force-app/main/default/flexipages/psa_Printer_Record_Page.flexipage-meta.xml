@@ -234,6 +234,16 @@
                 <identifier>RecordMax_Build_Volume_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Firmware_Version__c</fieldItem>
+                <identifier>RecordFirmware_Version_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-993ab6f4-0f37-4037-9c36-78002f434e68</name>
         <type>Facet</type>
     </flexiPageRegions>

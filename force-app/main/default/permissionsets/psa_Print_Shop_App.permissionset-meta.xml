@@ -172,6 +172,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>psa_Printer__c.Firmware_Version__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>psa_Printer__c.Manufacturer__c</field>
         <readable>true</readable>
     </fieldPermissions>
