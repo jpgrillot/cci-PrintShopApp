@@ -25,3 +25,16 @@ tasks:
     run_tests:
         options:
             required_org_code_coverage_percent: 75
+
+flows:
+    config_dev:
+        steps:
+            3:
+                task: assign_permission_sets
+                options:
+                    api_names: psa_Print_Shop_App
+
+    config_managed:
+        steps:
+            90:
+                task: None
